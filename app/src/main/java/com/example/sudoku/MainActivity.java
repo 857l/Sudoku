@@ -3,10 +3,13 @@ package com.example.sudoku;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import com.example.sudoku.Settings;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,11 +31,12 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings){
-            return true; //Обработка нажатия
+            Intent intent = new Intent(MainActivity.this, Settings.class);//Обработка нажатия
+            startActivity(intent);
         }else if (id == R.id.action_rules){
-            return true; //Обработка нажатия
+             //Обработка нажатия
         }else if (id == R.id.action_about){
-            return true; //Обработка нажатия
+             //Обработка нажатия
         }
 
         return super.onOptionsItemSelected(item);
