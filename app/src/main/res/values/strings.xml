@@ -4,4 +4,6 @@
     <string name="action_rules">Rules of the game</string>
     <string name="action_about">About</string>
     <string name="textSettings">TextSettings</string>
+    <string name="textAbout">TextAbout</string>
+    <string name="textRules">TextRules</string>
 </resources>

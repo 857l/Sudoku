@@ -7,9 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
-import com.example.sudoku.Settings;
+import com.example.sudoku.menu.AboutActivity;
+import com.example.sudoku.menu.RulesActivity;
+import com.example.sudoku.menu.SettingsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,12 +32,14 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.action_settings){
-            Intent intent = new Intent(MainActivity.this, Settings.class);//Обработка нажатия
+            Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
         }else if (id == R.id.action_rules){
-             //Обработка нажатия
+            Intent intent = new Intent(MainActivity.this, RulesActivity.class);
+            startActivity(intent);
         }else if (id == R.id.action_about){
-             //Обработка нажатия
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+            startActivity(intent);
         }
 
         return super.onOptionsItemSelected(item);

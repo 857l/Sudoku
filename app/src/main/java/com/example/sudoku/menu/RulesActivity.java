@@ -1,14 +1,16 @@
-package com.example.sudoku;
+package com.example.sudoku.menu;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.os.Bundle;
 
-public class Settings extends AppCompatActivity {
+import com.example.sudoku.R;
+
+public class RulesActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_settings);
-
+        setContentView(R.layout.activity_rules);
     }
 }
