@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
         if (id == R.id.action_settings){
             return true; //Обработка нажатия
+        }else if (id == R.id.action_rules){
+            return true; //Обработка нажатия
+        }else if (id == R.id.action_about){
+            return true; //Обработка нажатия
         }
 
         return super.onOptionsItemSelected(item);
